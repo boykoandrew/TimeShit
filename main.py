@@ -52,8 +52,8 @@ def monday():
     out_time.send_keys("1700")
     meal_break = Select(driver.find_element_by_css_selector("select[id='ddlMealBreak0']"))
     meal_break.select_by_visible_text('I voluntarily did not avail meal break')
-    # submit_day = driver.find_element_by_css_selector("a[id='lnkSubmit0']")
-    # submit_day.click()
+    submit_day = driver.find_element_by_css_selector("a[id='lnkSubmit0']")
+    submit_day.click()
 
 def tuesday():
 
@@ -79,8 +79,8 @@ def tuesday():
     time.sleep(1)
     meal_break = Select(driver.find_element_by_css_selector("select[id='ddlMealBreak1']"))
     meal_break.select_by_visible_text('I voluntarily did not avail meal break')
-    # submit_day = driver.find_element_by_css_selector("a[id='lnkSubmit0']")
-    # submit_day.click()
+    submit_day = driver.find_element_by_css_selector("a[id='lnkSubmit0']")
+    submit_day.click()
 def wednesday():
 
     day = driver.find_element_by_css_selector('span[id="lblDay2"]')
@@ -105,8 +105,8 @@ def wednesday():
     time.sleep(1)
     meal_break = Select(driver.find_element_by_css_selector("select[id='ddlMealBreak2']"))
     meal_break.select_by_visible_text('I voluntarily did not avail meal break')
-    # submit_day = driver.find_element_by_css_selector("a[id='lnkSubmit0']")
-    # submit_day.click()
+    submit_day = driver.find_element_by_css_selector("a[id='lnkSubmit0']")
+    submit_day.click()
 
 def thursday():
 
@@ -132,8 +132,8 @@ def thursday():
     time.sleep(1)
     meal_break = Select(driver.find_element_by_css_selector("select[id='ddlMealBreak3']"))
     meal_break.select_by_visible_text('I voluntarily did not avail meal break')
-    # submit_day = driver.find_element_by_css_selector("a[id='lnkSubmit0']")
-    # submit_day.click()
+    submit_day = driver.find_element_by_css_selector("a[id='lnkSubmit0']")
+    submit_day.click()
 def friday():
 
     day = driver.find_element_by_css_selector('span[id="lblDay4"]')
@@ -159,8 +159,8 @@ def friday():
     meal_break = Select(driver.find_element_by_css_selector("select[id='ddlMealBreak4']"))
     meal_break.select_by_visible_text('I voluntarily did not avail meal break')
     time.sleep(2)
-    # submit_day = driver.find_element_by_css_selector("a[id='lnkSubmit0']")
-    # submit_day.click()
+    submit_day = driver.find_element_by_css_selector("a[id='lnkSubmit0']")
+    submit_day.click()
 
 def previous_week():
     driver.find_element_by_xpath("//a[@id='lnkPrevWeek']").click()
@@ -173,7 +173,7 @@ for _ in range(3):
     friday()
     previous_week()
 
-# driver.quit()
+driver.quit()
 
 
 
