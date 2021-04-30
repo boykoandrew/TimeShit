@@ -13,6 +13,7 @@ driver.get('https://timetracker.techmahindra.com/mytime/Login.aspx#')
 wait = WebDriverWait(driver, 10)
 
 
+
 # login Microsoftonline.com
 wait.until(expected_conditions.presence_of_element_located((By.XPATH, "//div[text()='Sign in']")))
 name = driver.find_element_by_css_selector("input[name='loginfmt']").send_keys(email)
